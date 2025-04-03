@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- SEO Meta Tags -->
+     <meta name="description" content="Welcome to the portfolio of Balogun Olajuwon, showcasing my projects and skills as a fullstack developer.">
+     <meta name="author" content="Balogun Olajuwon">
+     
+     <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+     <meta property="og:site_name" content="Balogun Olajuwon's Portfolio" /> <!-- website name -->
+     <meta property="og:site" content="https://www.yourwebsite.com" /> <!-- website link -->
+     <meta property="og:title" content="Balogun Olajuwon's Portfolio" /> <!-- title shown in the actual shared post -->
+     <meta property="og:description" content="Explore my work as a fullstack developer and see my latest projects." /> <!-- description shown in the actual shared post -->
+     <meta property="og:image" content="https://www.yourwebsite.com/path/to/your/logo.jpg" /> <!-- image link, make sure it's jpg -->
+     <meta property="og:url" content="https://www.yourwebsite.com" /> <!-- where do you want your post to link to -->
+     <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+     
+     <!-- Webpage Title -->
+     <title>Pricing</title>
+         
+         <!-- Styles -->
+         <link rel="preconnect" href="https://fonts.gstatic.com">
+         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+         <link href="css/bootstrap.css" rel="stylesheet">
+         <link href="css/fontawesome-all.css" rel="stylesheet">
+         <link href="css/styles.css" rel="stylesheet">
+         
+         <!-- Favicon  -->
+         <link rel="icon" href="brand.png">
+
+         <style>
+
+            .navbar{
+                background-color: blue;
+            }
+
+            #title{
+                text-align: center;
+                margin-top: 20%;
+            }
+          
+            .pricing-container {
+                max-width: 600px;
+                margin: auto;
+            }
+            .plan {
+                border: 1px solid #ddd;
+                padding: 20px;
+                margin: 10px;
+                border-radius: 5px;
+            }
+            select {
+                padding: 5px;
+                margin-bottom: 20px;
+            }
+        </style>
+
+     </head>
+<body data-spy="scroll" data-target=".fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="brand1.png" alt="alternative"></a>  
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Mark</a> -->
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#header">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item page-scroll" href="pricing.html">Project Details</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+                <span class="nav-item social-icons">
+                    <span class="fa-stack">
+                        <a href="index.html#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="index.html#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+<section>
+    <div id="title">
+        <h2>Our Pricing Plans</h2>
+        <label for="currency">Select Currency:</label>
+        <select id="currency">
+        <option value="USD" selected>USD ($)</option>
+        <option value="EUR">EUR (€)</option>
+        <option value="GBP">GBP (£)</option>
+        <option value="NGN">Naira (₦)</option>
+    </select>
+    </div>
+    
+
+    <div class="pricing-container">
+        <div class="plan">
+            <h3>Basic Website</h3>
+            <p>HTML & CSS Only</p>
+            <p class="price" data-usd="300" data-eur="275" data-gbp="250" data-ngn="">$300</p>
+        </div>
+        <div class="plan">
+            <h3>Standard Website</h3>
+            <p>HTML, CSS, JavaScript</p>
+            <p class="price" data-usd="500" data-eur="460" data-gbp="420" data-ngn="">$500</p>
+        </div>
+        <div class="plan">
+            <h3>Advanced Website</h3>
+            <p>React, Backend, Security</p>
+            <p class="price" data-usd="1000" data-eur="920" data-gbp="850" data-ngn="">$1000</p>
+        </div>
+    </div>
+
+</section>
+    
+    <script>
+        // Function to fetch exchange rates
+        async function fetchExchangeRates() {
+            const response = await fetch('https://api.exchangerate-api.com/v4/latest/USD'); // Example API
+            const data = await response.json();
+            return data.rates;
+        }
+
+        // Function to update prices based on selected currency
+        async function updatePrices() {
+            const selectedCurrency = document.getElementById('currency').value;
+            const rates = await fetchExchangeRates();
+            document.querySelectorAll('.price').forEach(priceElement => {
+                let newPrice;
+                const basePriceUSD = priceElement.getAttribute("data-usd");
+                if (selectedCurrency === "USD") {
+                    newPrice = "$" + basePriceUSD;
+                } else if (selectedCurrency === "EUR") {
+                    newPrice = "€" + (basePriceUSD * rates.EUR).toFixed(2);
+                } else if (selectedCurrency === "GBP") {
+                    newPrice = "£" + (basePriceUSD * rates.GBP).toFixed(2);
+                } else if (selectedCurrency === "NGN") {
+                    newPrice = "₦" + (basePriceUSD * rates.NGN).toFixed(2);
+                }
+                priceElement.textContent = newPrice;
+            });
+        }
+
+        // Event listener for currency selection
+        document.getElementById('currency').addEventListener('change', updatePrices);
+
+        // Initial price update
+        updatePrices();
+    </script>
+
+</body>
+</html>
