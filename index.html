@@ -458,25 +458,24 @@
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/scripts.js">
-        (function() {
-            emailjs.init("42pqFRqqVXPNVcmNf"); // Replace with your EmailJS public key
-          })();
-          
-          document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the form from refreshing the page
-          
-            // Sending form data using EmailJS
-            emailjs.sendForm('service_2c2tbsi', 'template_k5uthvg', this)
-              .then(function(response) {
-                document.getElementById('response-message').innerHTML = "Message Sent Successfully!";
-                document.getElementById('contact-form').reset(); // Reset form after submission
-              }, function(error) {
-                document.getElementById('response-message').innerHTML = "Failed to send the message. Please try again.";
-                console.error('Error:', error);
-              });
+    <script src="js/scripts.js"></script>
+    <script>        (function() {
+        emailjs.init("42pqFRqqVXPNVcmNf"); // Replace with your EmailJS public key
+      })();
+      
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from refreshing the page
+      
+        // Sending form data using EmailJS
+        emailjs.sendForm('service_2c2tbsi', 'template_k5uthvg', this)
+          .then(function(response) {
+            document.getElementById('response-message').innerHTML = "Message Sent Successfully!";
+            document.getElementById('contact-form').reset(); // Reset form after submission
+          }, function(error) {
+            document.getElementById('response-message').innerHTML = "Failed to send the message. Please try again.";
+            console.error('Error:', error);
           });
-    </script>
+      });</script>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SBM823X83K"></script>
 <script>
