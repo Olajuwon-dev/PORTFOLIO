@@ -374,6 +374,10 @@
                     <form id="contactForm">
                         <div class="form-group">
                             <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Title</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
                             <label class="label-control" for="cname">Name</label>
                         </div>
                         <div class="form-group">
@@ -437,12 +441,6 @@
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
-
-
-    <!-- Copyright -->
-    <div class="copyright bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -450,23 +448,44 @@
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Distributed By <a class="no-line" href="https://themewagon.com/">Themewagon</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-        
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
     
     	
     <!-- Scripts -->
+   
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="js/scripts.js">
+        (function() {
+            emailjs.init("42pqFRqqVXPNVcmNf"); // Replace with your EmailJS public key
+          })();
+          
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from refreshing the page
+          
+            // Sending form data using EmailJS
+            emailjs.sendForm('service_2c2tbsi', 'template_k5uthvg', this)
+              .then(function(response) {
+                document.getElementById('response-message').innerHTML = "Message Sent Successfully!";
+                document.getElementById('contact-form').reset(); // Reset form after submission
+              }, function(error) {
+                document.getElementById('response-message').innerHTML = "Failed to send the message. Please try again.";
+                console.error('Error:', error);
+              });
+          });
+    </script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SBM823X83K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SBM823X83K');
+</script> 
+    <!-- Custom scripts -->
 </body>
 </html>
