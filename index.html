@@ -391,6 +391,7 @@
                         <div class="form-group">
                             <button type="submit" class="form-control-submit-button">Submit</button>
                         </div>
+                        <div id="response-message"></div>
                     </form>
                     <!-- end of contact form -->
 
@@ -459,18 +460,20 @@
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/scripts.js"></script>
-    <script>        (function() {
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>        
+        (function() {
         emailjs.init("42pqFRqqVXPNVcmNf"); // Replace with your EmailJS public key
       })();
       
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent the form from refreshing the page
       
         // Sending form data using EmailJS
         emailjs.sendForm('service_2c2tbsi', 'template_k5uthvg', this)
           .then(function(response) {
             document.getElementById('response-message').innerHTML = "Message Sent Successfully!";
-            document.getElementById('contact-form').reset(); // Reset form after submission
+            document.getElementById('contactForm').reset(); // Reset form after submission
           }, function(error) {
             document.getElementById('response-message').innerHTML = "Failed to send the message. Please try again.";
             console.error('Error:', error);
