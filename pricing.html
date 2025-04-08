@@ -295,23 +295,27 @@ p {
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
 
     
-    <script>
-        // Function to fetch exchange rates
-        async function fetchExchangeRates() {
-            const response = await fetch('https://api.exchangerate-api.com/v4/latest/USD'); // Example API
-            const data = await response.json();
-            return data.rates;
-        }
-
-        // Function to update prices based on selected currency
-       
-
-        // Event listener for currency selection
-        document.getElementById('currency').addEventListener('change', updatePrices);
-
-        // Initial price update
-        updatePrices();
-    </script>
+    <script> 
+      document.getElementById('currency').addEventListener('change', function() {
+          const selectedCurrency = this.value;
+          document.querySelectorAll('.price').forEach(priceElement => {
+              const usd = priceElement.getAttribute("data-usd");
+              const eur = priceElement.getAttribute("data-eur");
+              const gbp = priceElement.getAttribute("data-gbp");
+              const ngn = priceElement.getAttribute("data-ngn");
+      
+              if (selectedCurrency === "USD") {
+                  priceElement.textContent = "$" + usd;
+              } else if (selectedCurrency === "EUR") {
+                  priceElement.textContent = "€" + eur;
+              } else if (selectedCurrency === "GBP") {
+                  priceElement.textContent = "£" + gbp;
+              } else if (selectedCurrency === "NGN") {
+                  priceElement.textContent = "₦" + ngn;
+              }
+          });
+      });
+      </script>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SBM823X83K"></script>
 <script>
