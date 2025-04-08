@@ -237,7 +237,8 @@ p {
 
           </li>
         </ul>
-        <button>Contact us</button>
+        <button onclick="goToContact(this)" data-plan="Simple Website (Static)" class="plan-btn">Contact Us</button>
+
       </div>
       <div class="plan">
         <h3> Interactive Websites<br> (Front-end Heavy)</h3>
@@ -251,7 +252,8 @@ p {
           <li><i class="fas fa-check-circle"></i> Contact forms and lead capture</li>
           <li><i class="fas fa-check-circle"></i> Domain + Hosting Setup Assistance</li>
         </ul>
-        <button>Contact us</button>
+        <button onclick="goToContact(this)" data-plan="interactive websites (Front-end Heavy)" class="plan-btn">Contact Us</button>
+
       </div>
       <div class="plan">
         <h3>Websites with Backend <br> (CMS & Databases)</h3>
@@ -265,7 +267,8 @@ p {
           <li><i class="fas fa-check-circle"></i> Secure database setup (MySQL, MongoDB)</li>
           <li><i class="fas fa-check-circle"></i> Backup and data protection</li>
         </ul>
-        <button>Contact Us</button>
+        <button onclick="goToContact(this)" data-plan="website with backend (CMS & Databases)" class="plan-btn">Contact Us</button>
+
       </div>
     
 
@@ -278,7 +281,8 @@ p {
           <li><i class="fas fa-check-circle"></i>Basic SEO maintenance</li>
           <li><i class="fas fa-check-circle"></i> Security checks</li>
         </ul>
-        <button>Contact Us</button>
+        <button onclick="goToContact(this)" data-plan="website management & Support (Optional)" class="plan-btn">Contact Us</button>
+
       </div>
     </div>
 </section>
@@ -294,6 +298,20 @@ p {
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
 
+    <script>
+      function goToContact(button) {
+        const planName = button.getAttribute('data-plan');
+        const planDiv = button.closest('.plan');
+        const priceElement = planDiv.querySelector('.price');
+        const price = priceElement.textContent.trim();
+    
+        const encodedPlan = encodeURIComponent(planName);
+        const encodedPrice = encodeURIComponent(price);
+    
+        window.location.href = `contact.html?plan=${encodedPlan}&price=${encodedPrice}`;
+      }
+    </script>
+    
     
     <script> 
       document.getElementById('currency').addEventListener('change', function() {
