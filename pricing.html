@@ -304,24 +304,7 @@ p {
         }
 
         // Function to update prices based on selected currency
-        async function updatePrices() {
-            const selectedCurrency = document.getElementById('currency').value;
-            const rates = await fetchExchangeRates();
-            document.querySelectorAll('.price').forEach(priceElement => {
-                let newPrice;
-                const basePriceUSD = priceElement.getAttribute("data-usd");
-                if (selectedCurrency === "USD") {
-                    newPrice = "$" + basePriceUSD;
-                } else if (selectedCurrency === "EUR") {
-                    newPrice = "€" + (basePriceUSD * rates.EUR).toFixed(2);
-                } else if (selectedCurrency === "GBP") {
-                    newPrice = "£" + (basePriceUSD * rates.GBP).toFixed(2);
-                } else if (selectedCurrency === "NGN") {
-                    newPrice = "₦" + (basePriceUSD * rates.NGN).toFixed(2);
-                }
-                priceElement.textContent = newPrice;
-            });
-        }
+       
 
         // Event listener for currency selection
         document.getElementById('currency').addEventListener('change', updatePrices);
