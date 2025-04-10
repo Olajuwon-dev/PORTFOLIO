@@ -1000,6 +1000,43 @@ a:hover.back-to-top {
 		width: 128px;
 		height: 140px;
 	}
+
+	.navbar .navbar-nav {
+		font-size: 1.865rem;
+		line-height: 2;
+		margin-top: 0.75rem;
+		margin-bottom: 0.5rem;
+	}
+	#about{
+		text-align: center;
+		font-size: 1.865rem;
+	}
+	.btn-solid-lg {
+		display: inline-block;
+		padding: 2.625rem 2.625rem 2.625rem 2.625rem;
+		border: 1px solid #0b36a8;
+		background-color: #0b36a8;
+		color: #ffffff;
+		font-weight: 600;
+		font-size: 1.875rem;
+		line-height: 0;
+		text-decoration: none;
+		transition: all 0.2s;
+	}
+
+	.btn-outline-lg {
+		display: inline-block;
+		padding: 2.625rem 2.625rem 2.625rem 2.625rem;
+		border: 1px solid #24262a;
+		background-color: transparent;
+		color: #24262a;
+		font-weight: 600;
+		font-size: 1.875rem;
+		line-height: 0;
+		text-decoration: none;
+		transition: all 0.2s;
+	}
+	
 	
 }
 /* end of min-width 768px */
@@ -1029,7 +1066,7 @@ a:hover.back-to-top {
 		background-color: transparent;
 		box-shadow: none;
 		transition: all 0.2s;
-		height: 115px;
+		height: 11px;
 	}
 
 	.navbar.top-nav-collapse {
