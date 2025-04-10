@@ -1066,7 +1066,7 @@ a:hover.back-to-top {
 		background-color: transparent;
 		box-shadow: none;
 		transition: all 0.2s;
-		height: 11px;
+		
 	}
 
 	.navbar.top-nav-collapse {
