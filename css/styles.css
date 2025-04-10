@@ -988,8 +988,10 @@ a:hover.back-to-top {
 		font-size: 0.875rem;
 		line-height: 0.875rem;
 		box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.025);
+		
 	}
 
+	
 	.navbar .navbar-toggler {
 		padding: 0;
 		border: none;
@@ -1007,10 +1009,13 @@ a:hover.back-to-top {
 		margin-top: 0.75rem;
 		margin-bottom: 0.5rem;
 	}
-	#about{
-		text-align: center;
-		font-size: 1.865rem;
+	.basic-1 h2 {
+		font-size: 4rem;
 	}
+	.basic-1 p {
+		font-size: 1.54rem;
+	}
+	
 	.btn-solid-lg {
 		display: inline-block;
 		padding: 2.625rem 2.625rem 2.625rem 2.625rem;
@@ -1060,13 +1065,15 @@ a:hover.back-to-top {
 	/* end of general styles */
 
 
+	.
+
+
 	/* Navigation */
 	.navbar {
 		padding-top: 1.75rem;
 		background-color: transparent;
 		box-shadow: none;
 		transition: all 0.2s;
-		
 	}
 
 	.navbar.top-nav-collapse {
