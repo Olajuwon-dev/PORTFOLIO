@@ -363,7 +363,7 @@ input[type='checkbox'] {
 }
 
 .offcanvas-collapse {
-	position: relative;
+	position: fixed;
 	top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
 	bottom: 0;
 	left: 100%;
@@ -1063,7 +1063,7 @@ a:hover.back-to-top {
 	}
 	
 	.offcanvas-collapse {
-		position:relative;
+		position: fixed;
 		top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
 		bottom: 0;
 		left: 100%;
