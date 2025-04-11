@@ -25,16 +25,20 @@
 		});
     });
 
-    // offcanvas script from Bootstrap + added element to close menu on click in small viewport
-    $('[data-toggle="offcanvas"], .navbar-nav li a:not(.dropdown-toggle').on('click', function () {
-        $('.offcanvas-collapse').toggleClass('open')
-    })
-
-    {
-        document.querySelector('.close-menu-btn').addEventListener('click', function () {
-          document.querySelector('.offcanvas-collapse').classList.remove('open'); // or 'show', depending on your code
+    $('[data-toggle="offcanvas"], .navbar-nav li a:not(.dropdown-toggle)').on('click', function () {
+        $('.offcanvas-collapse').toggleClass('open');
+    });
+  
+    // Close menu on X click
+    document.addEventListener('DOMContentLoaded', function () {
+      const closeBtn = document.querySelector('.close-menu-btn');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function () {
+          document.querySelector('.offcanvas-collapse').classList.remove('open');
         });
-    }
+      }
+    });
+
 
     // hover in desktop mode
     function toggleDropdown (e) {

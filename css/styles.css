@@ -363,7 +363,7 @@ input[type='checkbox'] {
 }
 
 .offcanvas-collapse {
-	position: fixed;
+	position: relative;
 	top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
 	bottom: 0;
 	left: 100%;
@@ -447,6 +447,19 @@ input[type='checkbox'] {
 	border: none;
 	background-color: #505050;
 }
+
+.close-menu-btn {
+	display: none;
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	font-size: 2rem;
+	background: none;
+	border: none;
+	color: #fff; /* Adjust for your navbar background */
+	z-index: 1050;
+	cursor: pointer;
+  }
 /* end of dropdown menu */
 
 .navbar .fa-stack {
@@ -1050,7 +1063,7 @@ a:hover.back-to-top {
 	}
 	
 	.offcanvas-collapse {
-		position: fixed;
+		position:relative;
 		top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
 		bottom: 0;
 		left: 100%;
@@ -1072,15 +1085,7 @@ a:hover.back-to-top {
 	}
 
 	.close-menu-btn {
-		background: none;
-		border: none;
-		font-size: 2rem;
-		color: #fff; /* or whatever fits your nav */
-		position: absolute;
-		top: 15px;
-		right: 20px;
-		z-index: 9999;
-		cursor: pointer;
+		display: block;
 	  }
 	  
 	
