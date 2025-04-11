@@ -1070,6 +1070,19 @@ a:hover.back-to-top {
 		-webkit-transform: translateX(-100%);
 		transform: translateX(-100%);
 	}
+
+	.close-menu-btn {
+		background: none;
+		border: none;
+		font-size: 2rem;
+		color: #fff; /* or whatever fits your nav */
+		position: absolute;
+		top: 15px;
+		right: 20px;
+		z-index: 9999;
+		cursor: pointer;
+	  }
+	  
 	
 }
 /* end of min-width 768px */
