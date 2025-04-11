@@ -1032,6 +1032,16 @@ a:hover.back-to-top {
 		text-indent: -9999px;
 	}
 	
+	
+
+.navbar .navbar-nav {
+    margin: 21% 0 0 0%;
+    width: 50% ;
+}
+
+.navbar .social-icons {
+	margin: 0 0 0 50%;
+}
 
 
 	
@@ -1086,6 +1096,14 @@ a:hover.back-to-top {
 		text-indent: -9999px;
 	}
 	
+	.navbar .navbar-nav {
+		margin: 21% 0 0 0%;
+		width: 50% ;
+	}
+
+	.navbar .social-icons {
+		margin: 0 0 0 50%;
+	}
 
 }
 
@@ -1137,6 +1155,13 @@ a:hover.back-to-top {
 		text-indent: -9999px;
 	}
 	
+	.navbar .navbar-nav {
+		margin: 21% 0 0 0%;
+		width: 50% ;
+	}
+	.navbar .social-icons {
+		margin: 0 0 0 50%;
+	}
   }
 
   @media (min-width: 992px) and (max-width: 1199px) {
