@@ -30,6 +30,12 @@
         $('.offcanvas-collapse').toggleClass('open')
     })
 
+    {
+        document.querySelector('.close-menu-btn').addEventListener('click', function () {
+          document.querySelector('.offcanvas-collapse').classList.remove('open'); // or 'show', depending on your code
+        });
+    }
+
     // hover in desktop mode
     function toggleDropdown (e) {
         const _d = $(e.target).closest('.dropdown'),
