@@ -554,7 +554,7 @@ input[type='checkbox'] {
 	margin-bottom: 0.5rem;
 	color: #0b36a8;
 	font-weight: 600;
-	font-size: 0.875rem;
+	font-size: 0.975rem;
 	line-height: 1.5rem;
 	font-family: "Poppins";
 }
@@ -1017,6 +1017,20 @@ a:hover.back-to-top {
 		display: flex;
 		
 	  }
+
+	  a.back-to-top {
+		position: fixed;
+		z-index: 999;
+		right: 12px;
+		bottom: 12px;
+		display: none;
+		width: 80px;
+		height: 80px;
+		border-radius: 30px;
+		background: #3a424d url(../images/up-arrow.png) no-repeat center 47%;
+		background-size: 25px 25px;
+		text-indent: -9999px;
+	}
 	
 
 
@@ -1057,6 +1071,20 @@ a:hover.back-to-top {
 		text-decoration: none;
 		transition: all 0.2s;
 	}
+
+	a.back-to-top {
+		position: fixed;
+		z-index: 999;
+		right: 12px;
+		bottom: 12px;
+		display: none;
+		width: 80px;
+		height: 80px;
+		border-radius: 30px;
+		background: #3a424d url(../images/up-arrow.png) no-repeat center 47%;
+		background-size: 25px 25px;
+		text-indent: -9999px;
+	}
 	
 
 }
@@ -1093,6 +1121,20 @@ a:hover.back-to-top {
 		line-height: 0;
 		text-decoration: none;
 		transition: all 0.2s;
+	}
+
+	a.back-to-top {
+		position: fixed;
+		z-index: 999;
+		right: 12px;
+		bottom: 12px;
+		display: none;
+		width: 80px;
+		height: 80px;
+		border-radius: 30px;
+		background: #3a424d url(../images/up-arrow.png) no-repeat center 47%;
+		background-size: 25px 25px;
+		text-indent: -9999px;
 	}
 	
   }
