@@ -1069,7 +1069,9 @@ a:hover.back-to-top {
 	background-size: cover;
 }
 
-	
+#currency {
+	width: 9%;
+}
 }
 /* end of min-width 768px */
 
@@ -1152,6 +1154,10 @@ a:hover.back-to-top {
 		background-size: cover;
 	}
 
+	#currency {
+    	width: 9%;
+	}
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1229,6 +1235,11 @@ a:hover.back-to-top {
 		height: 500px;
 		background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/PRO2.jpg')center center no-repeat;
 		background-size: cover;
+	}
+
+
+	#currency {
+    	width: 9%;
 	}
 	
   }
