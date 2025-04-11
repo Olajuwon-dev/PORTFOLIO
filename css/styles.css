@@ -603,8 +603,13 @@ input[type='checkbox'] {
 /*******************/
 /*     Details     */
 /*******************/
+.split{
+	display:flex ;
+}
+
 .split .area-1 {
-	height: 430px;
+	width: 50%;
+    height: 710px;
 	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/PRO2.jpg')center center no-repeat;
 	background-size: cover;
 }
