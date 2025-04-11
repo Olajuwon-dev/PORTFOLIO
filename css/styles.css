@@ -5,7 +5,7 @@ html {
 }
 
 body, p {
-	color: #4d5055; 
+	color: #000000; 
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
 
@@ -338,7 +338,7 @@ input[type='checkbox'] {
 /**********************/
 .navbar {
 	position: relative !important;
-	background-color: #24262a;
+	background-color: #24262a ;
 	height: 90px;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -975,9 +975,38 @@ a:hover.back-to-top {
 /* Min-width 768px */
 @media (max-width: 480px){
 
-	/* Header */
+	.btn-solid-lg {
+		display: inline-block;
+		padding: 1.654rem 1.654rem 1.654rem 1.654rem;
+		border: 1px solid #0b36a8;
+		background-color: #0b36a8;
+		color: #ffffff;
+		font-weight: 600;
+		font-size: 0.875rem;
+		line-height: 0;
+		text-decoration: none;
+		transition: all 0.2s;
+	}
 
-	/* end of header */
+	.header .btn-outline-lg {
+		padding: 1.654rem 1.654rem 1.654rem 1.654rem;
+		border: none;
+		color: #ffffff;
+	}
+
+	.btn-outline-lg {
+		display: inline-block;
+		padding: 1.654rem 1.654rem 1.654rem 1.654rem;
+		border: 1px solid #24262a;
+		background-color: transparent;
+		color: #24262a;
+		font-weight: 600;
+		font-size: 0.875rem;
+		line-height: 0;
+		text-decoration: none;
+		transition: all 0.2s;
+	}
+	
 
 
 	
@@ -986,14 +1015,80 @@ a:hover.back-to-top {
 
 @media (min-width: 481px) and (max-width: 767px){
 
+	.btn-solid-lg {
+		display: inline-block;
+		padding: 1.654rem 1.654rem 1.654rem 1.654rem;
+		border: 1px solid #0b36a8;
+		background-color: #0b36a8;
+		color: #ffffff;
+		font-weight: 600;
+		font-size: 1rem;
+		line-height: 0;
+		text-decoration: none;
+		transition: all 0.2s;
+	}
+
+	.header .btn-outline-lg {
+		padding: 1.654rem 1.654rem 1.654rem 1.654rem;
+		border: none;
+		color: #ffffff;
+	}
+
+	.btn-outline-lg {
+		display: inline-block;
+		padding: 1.654rem 1.654rem 1.654rem 1.654rem;
+		border: 1px solid #24262a;
+		background-color: transparent;
+		color: #24262a;
+		font-weight: 600;
+		font-size: 1rem;
+		line-height: 0;
+		text-decoration: none;
+		transition: all 0.2s;
+	}
+	
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 	/* styles for tablets and small laptops */
+	.btn-solid-lg {
+		display: inline-block;
+		padding: 1.654rem 1.654rem 1.654rem 1.654rem;
+		border: 1px solid #0b36a8;
+		background-color: #0b36a8;
+		color: #ffffff;
+		font-weight: 600;
+		font-size: 1rem;
+		line-height: 0;
+		text-decoration: none;
+		transition: all 0.2s;
+	}
+
+	.header .btn-outline-lg {
+		padding: 1.654rem 1.654rem 1.654rem 1.654rem;
+		border: none;
+		color: #ffffff;
+	}
+
+	.btn-outline-lg {
+		display: inline-block;
+		padding: 1.654rem 1.654rem 1.654rem 1.654rem;
+		border: 1px solid #24262a;
+		background-color: transparent;
+		color: #24262a;
+		font-weight: 600;
+		font-size: 1rem;
+		line-height: 0;
+		text-decoration: none;
+		transition: all 0.2s;
+	}
+	
   }
 
   @media (min-width: 992px) and (max-width: 1199px) {
 	/* styles for laptops/desktops */
+
   }
 
   @media (min-width: 1200px) {
