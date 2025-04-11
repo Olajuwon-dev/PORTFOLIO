@@ -366,7 +366,7 @@ input[type='checkbox'] {
 
 .offcanvas-collapse {
 	position: fixed;
-	top: 3.25rem;
+	top: 0px;
 	bottom: 0;
 	left: 100%;
 	width: 100%;
@@ -450,18 +450,23 @@ input[type='checkbox'] {
 	background-color: #505050;
 }
 
-.close-menu-btn {
+.offcanvas-header {
 	display: none;
-	position: absolute;
-	top: 15px;
-	right: 20px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	position: relative;
+  }
+  
+  .close-menu-btn {
 	font-size: 2rem;
 	background: none;
 	border: none;
-	color: #fff; /* Adjust for your navbar background */
-	z-index: 1050;
+	color: #fff; 
 	cursor: pointer;
+	margin: 2% 0 0 97%;
   }
+
 /* end of dropdown menu */
 
 .navbar .fa-stack {
@@ -1006,6 +1011,12 @@ a:hover.back-to-top {
 		text-decoration: none;
 		transition: all 0.2s;
 	}
+	
+
+	  .offcanvas-header {
+		display: flex;
+		
+	  }
 	
 
 
