@@ -1150,7 +1150,7 @@ a:hover.back-to-top {
 	.split .area-1 {
 		width: 100%;
 		height: 500px;
-		background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/PRO2.jpg')center center no-repeat;
+		background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/pro3.png')center center no-repeat;
 		background-size: cover;
 	}
 
