@@ -610,7 +610,7 @@ input[type='checkbox'] {
 .split .area-1 {
 	width: 50%;
     height: 710px;
-	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/PRO2.jpg')center center no-repeat;
+	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/pro3.png')center center no-repeat;
 	background-size: cover;
 }
 
@@ -1064,8 +1064,8 @@ a:hover.back-to-top {
 
 .split .area-1 {
 	width: 100%;
-	height: 500px;
-	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/PRO2.jpg')center center no-repeat;
+	height: 1150px;
+	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/pro3.png')center center no-repeat;
 	background-size: cover;
 }
 
@@ -1149,7 +1149,7 @@ a:hover.back-to-top {
 	
 	.split .area-1 {
 		width: 100%;
-		height: 500px;
+		height: 1150px;
 		background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/pro3.png')center center no-repeat;
 		background-size: cover;
 	}
@@ -1232,8 +1232,8 @@ a:hover.back-to-top {
 	
 	.split .area-1 {
 		width: 100%;
-		height: 500px;
-		background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/PRO2.jpg')center center no-repeat;
+		height: 1150px;
+		background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/pro3.png')center center no-repeat;
 		background-size: cover;
 	}
 
