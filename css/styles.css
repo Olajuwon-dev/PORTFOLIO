@@ -261,6 +261,18 @@ a:hover {
 	color: #7d838a;
 }
 
+
+.row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* margin-right: -15px; */
+    /* margin-left: -15px; */
+    align-content: flex-start;
+    justify-content: space-around;
+}
+
+
 select {
     /* you should keep these first rules in place to maintain cross-browser behavior */
     -webkit-appearance: none;
