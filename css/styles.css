@@ -256,8 +256,8 @@ a:hover {
   }
   #faq .card {
 	width: 45%;
-	background-color: #1e2a38;
-	border: none;
+	/* background-color: #1e2a38; */
+	border: 2px solid black;
 	margin-bottom: 1rem;
 	border-radius: 0.5rem;
   }
@@ -265,7 +265,7 @@ a:hover {
 	background-color: transparent;
   }
   #faq .btn-link {
-	color: var(--accent-color);
+	color: var(--text-color);
 	font-weight: bold;
 	text-decoration: none;
   }
@@ -277,7 +277,7 @@ a:hover {
 	color: var(--text-color);
   }
   #faq h2 {
-	color: var(--accent-color);
+	color: var(--text-color);
 	margin-bottom: 2rem;
   }
   #faq p {
@@ -1160,8 +1160,8 @@ a:hover.back-to-top {
 
 #faq .card {
 	width: 100%;
-	background-color: #1e2a38;
-	border: none;
+	/* background-color: #1e2a38; */
+	border: 2px solid black;
 	margin-bottom: 1rem;
 	border-radius: 0.5rem;
   }
@@ -1260,11 +1260,10 @@ a:hover.back-to-top {
 	#currency {
     	width: 9%;
 	}
-
 	#faq .card {
 		width: 100%;
-		background-color: #1e2a38;
-		border: none;
+		/* background-color: #1e2a38; */
+		border: 2px solid black;
 		margin-bottom: 1rem;
 		border-radius: 0.5rem;
 	  }
@@ -1355,8 +1354,8 @@ a:hover.back-to-top {
 
 	#faq .card {
 		width: 100%;
-		background-color: #1e2a38;
-		border: none;
+		/* background-color: #1e2a38; */
+		border: 2px solid black;
 		margin-bottom: 1rem;
 		border-radius: 0.5rem;
 	  }
