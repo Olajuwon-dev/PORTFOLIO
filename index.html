@@ -1,498 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <!-- SEO Meta Tags -->
-<meta name="description" content="Welcome to the portfolio of Balogun Olajuwon, showcasing my projects and skills as a fullstack developer.">
-<meta name="author" content="Balogun Olajuwon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Balogun Olajuwon - Fullstack Developer. I build high-performance websites for businesses, brands, and entrepreneurs who want to stand out online.">
+  <meta name="author" content="Balogun Olajuwon">
+  <meta property="og:title" content="Olajuwon - Professional Website Developer">
+  <meta property="og:description" content="Let’s bring your website vision to life. I design and develop impactful, modern web solutions tailored to your needs.">
+  <meta property="og:url" content="https://olajuwon-dev.github.io/PORTFOLIO/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/brand.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Balogun Olajuwon | Web Developer Portfolio</title>
 
-<!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-<meta property="og:site_name" content="Balogun Olajuwon's Portfolio" /> <!-- website name -->
-<meta property="og:site" content="https://www.yourwebsite.com" /> <!-- website link -->
-<meta property="og:title" content="Balogun Olajuwon's Portfolio" /> <!-- title shown in the actual shared post -->
-<meta property="og:description" content="Explore my work as a fullstack developer and see my latest projects." /> <!-- description shown in the actual shared post -->
-<meta property="og:image" content="https://www.yourwebsite.com/path/to/your/logo.jpg" /> <!-- image link, make sure it's jpg -->
-<meta property="og:url" content="https://www.yourwebsite.com" /> <!-- where do you want your post to link to -->
-<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
-
-<!-- Webpage Title -->
-<title>Balogun Olajuwon's Portfolio</title>
-    
-    <!-- Styles -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
-    <link rel="icon" href="brand.png">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fontawesome-all.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="brand.png">
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
-    
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <div class="container">
-            
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="brand3.png" alt="alternative"></a>  
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+      <a class="navbar-brand logo-image" href="#"><img src="brand3.png" alt="logo"></a>
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#header">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Mark</a> -->
-
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <button type="button" class="close-menu-btn" aria-label="Close">
-                    &times;
-                  </button>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#header">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#Services">Services</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="index.html#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">price</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item page-scroll" href="pricing.html">Pricing</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#contact">Contact</a>
-                    </li>
-                </ul>
-                <span class="nav-item social-icons">
-                    <span class="fa-stack">
-                        <a href="index.html#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-facebook-f fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="index.html#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-twitter fa-stack-1x"></i>
-                        </a>
-                    </span>
-                </span>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
-
-
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h1 class="h1-large">Crafting Beautiful and High-Performance Websites</h1>
-                        <a class="btn-solid-lg page-scroll" href="pricing.html"><i class="fas fa-user"></i>Get in Touch</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
-
-
-    <!-- About-->
-    <div id="about" class="basic-1 bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-container first">
-                        <h2>Hello, I'm Olajuwon</h2>
-                        <p>I specialize in designing and developing beautiful, efficient websites that bring ideas to life. I collaborate closely with clients throughout the entire journey from concept and design to development and launch to ensure exceptional results.</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container second">
-                        <div class="time">2019 - PRESENT</div>
-                        <h6>Freelance Web Developer</h6>
-                        <p>Building and managing web projects independently with creativity and precision.</p>
-                        <div class="time">2018 - 2019</div>
-                        <h6>Lead Web Developer</h6>
-                        <p>Led the development of innovative projects for a leading digital agency.</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container third">
-                        <div class="time">2017 - 2018</div>
-                        <h6>Senior Web Designer</h6>
-                        <p>Designed and enhanced eCommerce platforms, delivering high-converting web experiences.</p>
-                        <div class="time">2016 - 2017</div>
-                        <h6>Junior Web Designer</h6>
-                        <p>Supported design projects and collaborated with teams at a boutique web agency.</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of about -->
-
-
-    <!-- Services -->
-    <div id="services" class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Services Offered</h2>
-                    <p class="p-heading">With over four years of experience in web design and development, I provide startups and established companies with the following services:</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="far fa-gem"></i>
-                        <h4>DESIGN</h4>
-                        <p>Effective online projects begin with exceptional design, laying a robust foundation for future development and sustainable growth.</p>
-                    </div> <!-- end of text-box -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="fas fa-code"></i>
-                        <h4>DEVELOPMENT</h4>
-                        <p>Whether crafting original designs or adapting client-provided concepts, I focus on producing clean, well-structured, and reliable code.</p>
-                    </div> <!-- end of text-box -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="fas fa-tv"></i>
-                        <h4>BASIC SEO</h4>
-                        <p>I implement fundamental SEO strategies to enhance your project's visibility on search engines, potentially reducing advertising costs.</p>
-                    </div> <!-- end of text-box -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-        <div class="form-group">
-            <a href="pricing.html"><button type="submit" class="form-control-submit-button" style="width: 50%; margin:0 0 0 25%;"  >Order now </button></a>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="text-container">
+            <h1 class="h1-large">Crafting Beautiful, Fast, and Reliable Websites</h1>
+            <a class="btn-solid-lg page-scroll" href="#contact"><i class="fas fa-envelope"></i> Let's Talk</a>
+          </div>
         </div>
-    </div> <!-- end of basic-2 -->
-    <!-- end of services -->
+      </div>
+    </div>
+  </header>
 
-
-    <!-- Details -->
-	<div class="split">
-		<div class="area-1">
-		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2 bg-gray">
-            <div class="container">    
-                <div class="row">
-                    <div class="col-lg-12">     
-                        
-                        <!-- Text Container -->
-                        <div class="text-container">
-                            <h2>Why Collaborate With Me</h2>
-                            <p>I prioritize clear communication and dedicate time to thoroughly understand each client's unique challenges and objectives.</p>
-                            <h5>Design Tools</h5>
-                            <p>Proficient in industry-standard tools such as Photoshop and Illustrator, with additional experience in Figma and Canva.</p>
-                            <h5>Development Skills</h5>
-                            <p>Experienced with HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and other contemporary frameworks, ensuring versatile and modern solutions.</p>
-                            
-                            <div class="icons-container">
-                                <img src="images/details-icon-photoshop.png" alt="alternative">
-                                <img src="images/details-icon-illustrator.png" alt="alternative">
-                                <img src="images/details-icon-html.png" alt="alternative">
-                                <img src="images/details-icon-css.png" alt="alternative">
-                                <img src="images/details-icon-bootstrap.png" alt="alternative">
-                                <img src="images/details-icon-javascript.png" alt="alternative">
-                                <img src="images/details-icon-canva.png" alt="alternative">
-                            </div> <!-- end of icons-container -->
-                        </div> <!-- end of text-container -->
-                        <!-- end of text container -->
-
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-		</div> <!-- end of area-2 -->
-    </div> <!-- end of split -->
-    <!-- end of details -->
-
-
-    <!-- Projects -->
-    <div id="projects" class="basic-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="#">
-                                <img class="img-fluid" src="images/mob2.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Bmajor, <strong>Project:</strong> Designed and developed a comprehensive web presence for their fitness brand, including websites and landing pages aimed at marketing workout plans.<a class="blue" href="https://olajuwon-dev.github.io/BUKKYMAJOR/" target="_blank">details</a></p>
-                    </div> <!-- end of text-container -->
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="#">
-                                <img class="img-fluid" src="images/web1.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Luminara, <strong>Project:</strong> Designed and developed a contemporary platform facilitating the purchase of cosmetic products. <a class="blue" href="https://olajuwon-dev.github.io/COSMETIC-TEMPLATE-/index.html" target="_blank">details</a></p>
-                    </div> <!-- end of text-container -->
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="#">
-                                <img class="img-fluid" src="images/web3.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Sweetfings, <strong>Project:</strong> Designed and developed a modern platform to showcase exquisite dining experiences and culinary offerings.<a class="blue" href="https://olajuwon-dev.github.io/sweetfings/" target="_blank">details</a></p>
-                    </div> <!-- end of text-container -->
-                    <!-- <div class="text-container">
-                        <div class="image-container">
-                            <a href="#">
-                                <img class="img-fluid" src="images/project-4.jpg" alt="alternative">
-                            </a>
-                        </div> 
-                        <p><strong>For:</strong> Evolosim, <strong>Project:</strong> complete redesign of their corporate website and platform update for their online shop <a class="blue" href="#">details</a></p>
-                    </div> end of text-container -->
-                </div> 
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-3 -->
-    <!-- end of projects -->
-   
-  
-
-
-    <!-- Section Divider -->
+  <section id="about" class="basic-1 bg-gray">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <hr class="section-divider">
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-    <!-- end of section divider -->
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>Hello, I'm Olajuwon</h2>
+          <p>I design and build scalable, elegant websites from scratch. Whether you're launching a brand, rebranding a company, or growing an idea—I'll turn your vision into a web experience that delivers real results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
-   <!-- Questions -->
-<div class="accordion-1">
+  <section id="services" class="basic-2">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="h2-heading">Frequent Questions</h2>
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-        <div class="row">
-            <div class="col-lg-12">
+      <h2 class="text-center">What I Offer</h2>
+      <div class="row text-center">
+        <div class="col-lg-4">
+          <div class="text-box">
+            <i class="far fa-gem"></i>
+            <h4>Design</h4>
+            <p>Intuitive, modern, and branded UI/UX that communicates your message effectively.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="text-box">
+            <i class="fas fa-code"></i>
+            <h4>Development</h4>
+            <p>Custom-coded websites and web apps using modern technologies for performance and security.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="text-box">
+            <i class="fas fa-search"></i>
+            <h4>SEO Strategy</h4>
+            <p>Technical and content-focused SEO integration to help your website get discovered faster.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                How can I contact you and quickly get a quote for my online project?
-                            </button>
-                        </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                            <div class="card-body">
-                                The best way to reach me is through the contact form on my website. For a fast quote, please provide as many project details as possible, including your requirements and timeline.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Do you create designs from the ground up or are you using themes?
-                            </button>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                            <div class="card-body">
-                                I specialize in creating custom designs tailored to your specific needs. While I can use themes as a base, my focus is on delivering unique solutions that reflect your brand identity.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Will I receive any included maintenance or warranty after project delivery?
-                            </button>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                            <div class="card-body">
-                                Yes, I offer a maintenance period after project delivery to ensure everything runs smoothly. Details of the maintenance and warranty will be discussed during the project agreement.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                If something goes wrong with the project, can I have my money back?
-                            </button>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                            <div class="card-body">
-                                I strive for client satisfaction. If there are significant issues with the project that cannot be resolved, I will work with you to find a fair solution, which may include a refund based on the circumstances.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                What's your preferred method of payment and do you need an advance?
-                            </button>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                            <div class="card-body">
-                                I accept various payment methods, including bank transfers and online payment platforms. An advance payment is typically required to secure your project and cover initial costs.
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- end of accordion -->
+  <section id="projects" class="basic-3">
+    <div class="container">
+      <h2 class="text-center">Featured Projects</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/mob2.png" class="card-img-top" alt="Bmajor">
+            <div class="card-body">
+              <h5 class="card-title">Bmajor Fitness</h5>
+              <p class="card-text">Landing pages for promoting premium fitness content and services.</p>
+              <a href="https://olajuwon-dev.github.io/BUKKYMAJOR/" class="btn btn-primary" target="_blank">Live</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/web1.png" class="card-img-top" alt="Luminara">
+            <div class="card-body">
+              <h5 class="card-title">Luminara Cosmetics</h5>
+              <p class="card-text">Modern e-commerce design for skincare and beauty product lines.</p>
+              <a href="https://olajuwon-dev.github.io/COSMETIC-TEMPLATE-/index.html" class="btn btn-primary" target="_blank">Live</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/web3.png" class="card-img-top" alt="Sweetfings">
+            <div class="card-body">
+              <h5 class="card-title">Sweetfings Dining</h5>
+              <p class="card-text">Digital platform showcasing high-end culinary services and brand story.</p>
+              <a href="https://olajuwon-dev.github.io/sweetfings/" class="btn btn-primary" target="_blank">Live</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-</div> <!-- end of accordion-1 -->
-<!-- end of questions -->
+  <section id="faq" class="accordion-1 bg-gray">
+    <div class="container">
+      <h2 class="text-center">FAQs</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header"><button class="btn btn-link btn-block text-left" data-toggle="collapse" data-target="#faq1">Can you build my idea into a real website?</button></div>
+          <div id="faq1" class="collapse show" data-parent="#accordionExample"><div class="card-body">Yes. Whether it's a landing page, blog, store, or app — I design and develop it from scratch based on your vision.</div></div>
+        </div>
+        <div class="card">
+          <div class="card-header"><button class="btn btn-link btn-block text-left" data-toggle="collapse" data-target="#faq2">How do we start working together?</button></div>
+          <div id="faq2" class="collapse" data-parent="#accordionExample"><div class="card-body">Reach out through the contact section. I’ll respond quickly so we can schedule a consultation and begin planning.</div></div>
+        </div>
+        <div class="card">
+          <div class="card-header"><button class="btn btn-link btn-block text-left" data-toggle="collapse" data-target="#faq3">Can you guide me on what kind of website I need?</button></div>
+          <div id="faq3" class="collapse" data-parent="#accordionExample"><div class="card-body">Yes. I assess your business goals and suggest the structure, features, and technologies that will best serve your audience.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="contact" class="form-1">
+    <div class="container">
+      <h2 class="text-center">Let’s Talk</h2>
+      <p class="text-center">Share your vision. Let's build something impactful together.</p>
+      <form id="contactForm" class="w-75 mx-auto">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="user_name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="user_email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Project Details</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        <div id="response-message" class="mt-3 text-center"></div>
+      </form>
+    </div>
+  </section>
 
-    <!-- Contact -->
-    <div id="contact" class="form-1 bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Contact details</h2>
-                    <p class="p-heading">For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email <a class="blue no-line" href="mailto:balogunolajuwon78@gmail.com">balogunolajuwon78@gmail.com</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Contact Form -->
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Title</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Project details</label>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">Submit</button>
-                        </div>
-                        <div id="response-message"></div>
-                    </form>
-                    <!-- end of contact form -->
+  <footer class="footer bg-dark text-white mt-5">
+    <div class="container text-center py-3">
+      <p>&copy; 2025 Olajuwon. All rights reserved.</p>
+    </div>
+  </footer>
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-1 -->  
-    <!-- end of contact -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("42pqFRqqVXPNVcmNf");
+    })();
 
-
-    <!-- Footer -->
-    <div class="footer bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="social-container">
-                        <span class="fa-stack">
-                            <a href="index.html#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="index.html#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="index.html#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="index.html#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="index.html#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-youtube fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> <!-- end of social-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a class="no-line" href="index.html#your-link">olajuwon</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
-
-    
-    	
-    <!-- Scripts -->
-   
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/scripts.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>        
-        (function() {
-        emailjs.init("42pqFRqqVXPNVcmNf"); // Replace with your EmailJS public key
-      })();
-      
-      document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the form from refreshing the page
-      
-        // Sending form data using EmailJS
-        emailjs.sendForm('service_2c2tbsi', 'template_k5uthvg', this)
-          .then(function(response) {
-            document.getElementById('response-message').innerHTML = "Message Sent Successfully!";
-            document.getElementById('contactForm').reset(); // Reset form after submission
-          }, function(error) {
-            document.getElementById('response-message').innerHTML = "Failed to send the message. Please try again.";
-            console.error('Error:', error);
-          });
-      });</script>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SBM823X83K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SBM823X83K');
-</script> 
-    <!-- Custom scripts -->
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      emailjs.sendForm('service_2c2tbsi', 'template_k5uthvg', this)
+        .then(() => {
+          document.getElementById('response-message').textContent = "Message sent successfully!";
+          this.reset();
+        }, (error) => {
+          document.getElementById('response-message').textContent = "Failed to send message. Please try again.";
+          console.error('Error:', error);
+        });
+    });
+  </script>
 </body>
 </html>
