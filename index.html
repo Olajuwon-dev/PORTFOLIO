@@ -17,11 +17,24 @@
   <link rel="stylesheet" href="css/fontawesome-all.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="brand.png">
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    
+  </style>
+
+
 </head>
 <body>
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
     <div class="container">
       <a class="navbar-brand logo-image" href="#"><img src="brand3.png" alt="logo"></a>
+      <button class="btn-toggle-theme" onclick="toggleTheme()">
+        <i id="theme-icon" class="fas fa-moon"></i>
+        
+      </button>
       <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link" href="#header">Home</a></li>
@@ -60,7 +73,7 @@
 
   <section id="services" class="basic-2">
     <div class="container">
-      <h2 class="text-center">What I Offer</h2>
+      <h2 class="text-center" style="font-size: 4rem; line-height: 10.5rem;">What I Offer</h2>
       <div class="row text-center">
         <div class="col-lg-4">
           <div class="text-box">
@@ -89,7 +102,7 @@
 
   <section id="projects" class="basic-3">
     <div class="container">
-      <h2 class="text-center">Featured Projects</h2>
+      <h2 class="text-center" style="font-size: 4rem; line-height: 10.5rem;">Featured Projects</h2>
       <div class="row">
         <div class="col-md-4 mb-4">
           <div class="card">
@@ -125,30 +138,56 @@
     </div>
   </section>
 
-  <section id="faq" class="accordion-1 bg-gray">
+  <section id="faq" class="accordion-1">
     <div class="container">
       <h2 class="text-center">FAQs</h2>
+      <p class="text-center share" style="font-size: 2rem; line-height: 10.5rem;">Here are answers to the most common questions I get from clients.</p>
       <div class="accordion" id="accordionExample">
         <div class="card">
-          <div class="card-header"><button class="btn btn-link btn-block text-left" data-toggle="collapse" data-target="#faq1">Can you build my idea into a real website?</button></div>
-          <div id="faq1" class="collapse show" data-parent="#accordionExample"><div class="card-body">Yes. Whether it's a landing page, blog, store, or app — I design and develop it from scratch based on your vision.</div></div>
+          <div class="card-header">
+            <button class="btn btn-link btn-block text-left collapsed" data-toggle="collapse" data-target="#faq1">
+              Can you build my idea into a real website?
+            </button>
+          </div>
+          <div id="faq1" class="collapse" data-parent="#accordionExample">
+            <div class="card-body">
+              Yes. Whether it's a landing page, blog, store, or app — I design and develop it from scratch based on your vision.
+            </div>
+          </div>
         </div>
         <div class="card">
-          <div class="card-header"><button class="btn btn-link btn-block text-left" data-toggle="collapse" data-target="#faq2">How do we start working together?</button></div>
-          <div id="faq2" class="collapse" data-parent="#accordionExample"><div class="card-body">Reach out through the contact section. I’ll respond quickly so we can schedule a consultation and begin planning.</div></div>
+          <div class="card-header">
+            <button class="btn btn-link btn-block text-left collapsed" data-toggle="collapse" data-target="#faq2">
+              How do we start working together?
+            </button>
+          </div>
+          <div id="faq2" class="collapse" data-parent="#accordionExample">
+            <div class="card-body">
+              Reach out through the contact section. I’ll respond quickly so we can schedule a consultation and begin planning.
+            </div>
+          </div>
         </div>
         <div class="card">
-          <div class="card-header"><button class="btn btn-link btn-block text-left" data-toggle="collapse" data-target="#faq3">Can you guide me on what kind of website I need?</button></div>
-          <div id="faq3" class="collapse" data-parent="#accordionExample"><div class="card-body">Yes. I assess your business goals and suggest the structure, features, and technologies that will best serve your audience.</div></div>
+          <div class="card-header">
+            <button class="btn btn-link btn-block text-left collapsed" data-toggle="collapse" data-target="#faq3">
+              Can you guide me on what kind of website I need?
+            </button>
+          </div>
+          <div id="faq3" class="collapse" data-parent="#accordionExample">
+            <div class="card-body">
+              Yes. I assess your business goals and suggest the structure, features, and technologies that will best serve your audience.
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  
 
   <section id="contact" class="form-1">
     <div class="container">
       <h2 class="text-center">Let’s Talk</h2>
-      <p class="text-center">Share your vision. Let's build something impactful together.</p>
+      <p class="text-center share">Share your vision. Let's build something impactful together.</p>
       <form id="contactForm" class="w-75 mx-auto">
         <div class="form-group">
           <label for="name">Name</label>
@@ -195,5 +234,33 @@
         });
     });
   </script>
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById('theme-icon');
+      body.classList.toggle('dark-mode');
+      const isDark = body.classList.contains('dark-mode');
+      localStorage.setItem('preferredTheme', isDark ? 'dark' : 'light');
+      icon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+    }
+
+    window.onload = function () {
+      const savedTheme = localStorage.getItem('preferredTheme');
+      const icon = document.getElementById('theme-icon');
+      if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        icon.className = 'fas fa-sun';
+      } else {
+        icon.className = 'fas fa-moon';
+      }
+    };
+
+    document.querySelectorAll('.collapse').forEach(collapse => {
+      collapse.addEventListener('show.bs.collapse', () => {
+        collapse.previousElementSibling.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
 </body>
 </html>

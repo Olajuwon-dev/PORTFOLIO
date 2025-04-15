@@ -5,12 +5,31 @@ html {
 }
 
 body, p {
-	color: #000000; 
+	
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
+body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	font-family: 'Open Sans', sans-serif;
+	transition: background 0.3s ease, color 0.3s ease;
+  }
+
+:root {
+	--bg-color: #ffffff;
+	--text-color: #000000;
+	--accent-color: #fbffff;
+	--card-bg: #f5f5f5;
+  }
+
+  body.dark-mode {
+	--bg-color: #0e1724;
+	--text-color: #ffffff;
+	--card-bg: #1e2a38;
+  }
 
 h1 {
-	color: #24262a;
+	
 	font-weight: 700;
 	font-size: 2.5rem;
 	line-height: 3.25rem;
@@ -18,7 +37,7 @@ h1 {
 }
 
 h2 {
-	color: #24262a;
+	
 	font-weight: 700;
 	font-size: 2rem;
 	line-height: 2.5rem;
@@ -26,7 +45,7 @@ h2 {
 }
 
 h3 {
-	color: #24262a;
+	
 	font-weight: 700;
 	font-size: 1.75rem;
 	line-height: 2.25rem;
@@ -34,7 +53,7 @@ h3 {
 }
 
 h4 {
-	color: #24262a;
+	
 	font-weight: 700;
 	font-size: 1.5rem;
 	line-height: 2rem;
@@ -42,7 +61,7 @@ h4 {
 }
 
 h5 {
-	color: #24262a;
+	
 	font-weight: 700;
 	font-size: 1.25rem;
 	line-height: 1.625rem;
@@ -50,7 +69,7 @@ h5 {
 }
 
 h6 {
-	color: #24262a;
+	
 	font-weight: 700;
 	font-size: 1rem;
 	line-height: 1.375rem;
@@ -103,10 +122,6 @@ a:hover {
 	color: #2259ec;
 }
 
-.bg-gray {
-	background-color: #f7f9fb;
-}
-
 .section-divider {
 	display: block;
 	height: 1px;
@@ -114,6 +129,8 @@ a:hover {
 	border: none;
 	background-color: #d3dae2;
 }
+
+
 
 .btn-solid-reg {
 	display: inline-block;
@@ -137,8 +154,8 @@ a:hover {
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-	border: 1px solid #0b36a8;
-	background-color: #0b36a8;
+	border: 1px solid #2e3442;
+	background-color: #2e3442;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -210,6 +227,62 @@ a:hover {
 	text-decoration: none;
 }
 
+.btn-toggle-theme {
+	position: fixed;
+	
+	right: 1.5rem;
+	z-index: 1000;
+	background-color: var(--accent-color);
+	color: #000;
+	border: none;
+	padding: 10px 14px;
+	border-radius: 30px;
+	font-weight: bold;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+
+.card, .form-control, .form-control:focus {
+	background-color: var(--card-bg);
+	color: var(--text-color);
+	border: none;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  #faq {
+	
+	padding: 60px 0;
+  }
+  #faq .card {
+	width: 45%;
+	background-color: #1e2a38;
+	border: none;
+	margin-bottom: 1rem;
+	border-radius: 0.5rem;
+  }
+  #faq .card-header {
+	background-color: transparent;
+  }
+  #faq .btn-link {
+	color: var(--accent-color);
+	font-weight: bold;
+	text-decoration: none;
+  }
+  #faq .btn-link:hover {
+	text-decoration: underline;
+  }
+  #faq .card-body {
+	background-color: #273947;
+	color: var(--text-color);
+  }
+  #faq h2 {
+	color: var(--accent-color);
+	margin-bottom: 2rem;
+  }
+  #faq p {
+	color: var(--text-color);
+  }
 .form-group {
 	position: relative;
 	margin-bottom: 1.25rem;
@@ -581,7 +654,7 @@ input[type='checkbox'] {
 /********************/
 .basic-2 {
 	padding-top: 7.75rem;
-	padding-bottom: 5.25rem;
+	padding-bottom: 0.25rem;
 }
 
 .basic-2 .h2-heading {
@@ -650,7 +723,7 @@ input[type='checkbox'] {
 /*     Projects     */
 /********************/
 .basic-3 {
-	padding-top: 7.75rem;
+	padding-top: 0.75rem;
 	padding-bottom: 1rem;
 }
 
@@ -858,7 +931,7 @@ input[type='checkbox'] {
 .footer {
 	padding-top: 6.25rem;
 	padding-bottom: 2rem;
-	background-color: #24262a;
+	background-color: var(--bg-color) !important;
 	text-align: center;
 }
 
@@ -1084,6 +1157,24 @@ a:hover.back-to-top {
 #currency {
 	width: 9%;
 }
+
+#faq .card {
+	width: 100%;
+	background-color: #1e2a38;
+	border: none;
+	margin-bottom: 1rem;
+	border-radius: 0.5rem;
+  }
+
+  .text-center{
+	font-size: 2rem !important; 
+	line-height: 6.5rem !important;
+  }
+
+  .share{
+	line-height: 2rem !important;
+	font-size: 1.50rem !important;
+  }
 }
 /* end of min-width 768px */
 
@@ -1170,6 +1261,14 @@ a:hover.back-to-top {
     	width: 9%;
 	}
 
+	#faq .card {
+		width: 100%;
+		background-color: #1e2a38;
+		border: none;
+		margin-bottom: 1rem;
+		border-radius: 0.5rem;
+	  }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1253,6 +1352,14 @@ a:hover.back-to-top {
 	#currency {
     	width: 9%;
 	}
+
+	#faq .card {
+		width: 100%;
+		background-color: #1e2a38;
+		border: none;
+		margin-bottom: 1rem;
+		border-radius: 0.5rem;
+	  }
 	
   }
 
