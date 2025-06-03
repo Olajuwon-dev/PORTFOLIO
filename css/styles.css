@@ -1143,6 +1143,11 @@ a:hover.back-to-top {
 	margin: 0 0 0 50%;
 }
 
+.navbar-brand .logo-image{
+		background-image: url(brand3.png);
+		background-size: cover;
+}
+
 .split{
 	display:block ;
 }
@@ -1246,6 +1251,11 @@ a:hover.back-to-top {
 		font-size: 1.75rem;
 	}
 
+	.navbar-brand .logo-image{
+		background-image: url(brand3.png);
+		background-size: cover;
+	}
+
 	.split{
 		display:block ;
 	}
@@ -1325,6 +1335,10 @@ a:hover.back-to-top {
 	.navbar .social-icons {
 		margin: 0 0 0 50%;
 	}
+	.navbar-brand .logo-image{
+		background-image: url(brand3.png);
+		background-size: cover;
+	}
 	.split{
 		display:block ;
 	}
@@ -1339,6 +1353,7 @@ a:hover.back-to-top {
 		margin-right: 0.25rem;
 		font-size: 1.75rem;
 	}
+	
 	
 	.split .area-1 {
 		width: 100%;
