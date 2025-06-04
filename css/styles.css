@@ -1143,8 +1143,9 @@ a:hover.back-to-top {
 	margin: 0 0 0 50%;
 }
 
-.navbar-brand .logo-image{
-		background-image: url(brand3.png);
+
+.logo-image{
+	background-image: url(brand3.png);
 		background-size: cover;
 }
 
