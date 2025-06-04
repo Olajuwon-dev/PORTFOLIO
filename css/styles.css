@@ -1145,7 +1145,7 @@ a:hover.back-to-top {
 
 
 .logo-image{
-	background-image: url(brand3.png);
+	background-image: url(./brand3.png);
 		background-size: cover;
 }
 
