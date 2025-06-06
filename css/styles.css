@@ -438,7 +438,7 @@ input[type='checkbox'] {
 
 .navbar .logo-image img {
     width: 110px;
-	height: 85px;
+	height: 80px;
 }
 
 .navbar .logo-text {
@@ -1146,7 +1146,7 @@ a:hover.back-to-top {
 
 .logo-image{
 	background-image: url(./brand3.png);
-		background-size: cover;
+	background-size: cover;
 }
 
 .split{
